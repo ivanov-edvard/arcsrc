@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cus:Customizations xmlns:cus="http://www.bea.com/wli/config/customizations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xt="http://www.bea.com/wli/config/xmltypes">
+  <cus:customization xsi:type="cus:EnvValueCustomizationType">
+    <cus:description/>
+    <!-- ProxySMEV3_FTPService start-->
+    
+    <cus:envValueAssignments>
+      <xt:envValueType>Service URI</xt:envValueType>
+      <xt:location>0</xt:location>
+      <xt:owner>
+        <xt:type>BusinessService</xt:type>
+        <xt:path>ProxySMEV3_FTPService/BusinessServices/SMEV3_FTP</xt:path>
+      </xt:owner>
+      <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">jca://eis/ftp/FtpAdapter_SMEV3</xt:value>
+    </cus:envValueAssignments>
+	
+	<!-- ProxySMEV3_Service start-->
+	
+    <cus:envValueAssignments>
+      <xt:envValueType>Service URI</xt:envValueType>
+      <xt:location>0</xt:location>
+      <xt:owner>
+        <xt:type>BusinessService</xt:type>
+        <xt:path>ProxySMEV3_Service/1.1/BusinessServices/SMEV3</xt:path>
+      </xt:owner>
+      <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">http://smev3-n0.test.gosuslugi.ru:7500/smev/v1.1/ws</xt:value>
+    </cus:envValueAssignments>
+    
+    <cus:envValueAssignments>
+      <xt:envValueType>Service URI</xt:envValueType>
+      <xt:location>0</xt:location>
+      <xt:owner>
+        <xt:type>BusinessService</xt:type>
+        <xt:path>ProxySMEV3_Service/1.2/BusinessServices/SMEV3</xt:path>
+      </xt:owner>
+      <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">http://smev3-n0.test.gosuslugi.ru:7500/smev/v1.2/ws</xt:value>
+    </cus:envValueAssignments>
+    
+    <cus:envValueAssignments>
+      <xt:envValueType>Service URI</xt:envValueType>
+      <xt:location>0</xt:location>
+      <xt:owner>
+        <xt:type>BusinessService</xt:type>
+        <xt:path>ProxySMEV3_Service/1.3/BusinessServices/SMEV3</xt:path>
+      </xt:owner>
+      <xt:value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">http://smev3-n0.test.gosuslugi.ru:5000/transport_1_0_2/</xt:value>
+    </cus:envValueAssignments>
+	 
+	<!-- ProxySMEV3_Service end-->
+  </cus:customization>
+  
+</cus:Customizations>
